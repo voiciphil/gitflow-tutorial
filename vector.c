@@ -16,6 +16,10 @@ void push_back(struct vector *v, int val) {
     v->arr[v->cur++] = val;
 }
 
+void pop_back(struct vector *v) {
+    v->cur--;
+}
+
 int *at(struct vector *v, int pos) {
     if (v->cur <= pos) {
         return NULL;
