@@ -17,6 +17,10 @@ void push_back(struct vector *v, int val) {
 }
 
 void pop_back(struct vector *v) {
+    if (empty(v) == 1) {
+        return;
+    }
+    
     v->cur--;
 }
 
