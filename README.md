@@ -26,4 +26,4 @@ git checkout develop
 git pull origin develop
 git branch -d feature-sth
 ```
-
+7. merge 되지 않으면 3번부터 다시 시작한다.
