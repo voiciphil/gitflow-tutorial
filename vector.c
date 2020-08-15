@@ -23,3 +23,7 @@ int *at(struct vector *v, int pos) {
 
     return v->arr + pos;
 }
+
+int empty(struct vector *v) {
+    return v->cur == 0;
+}
