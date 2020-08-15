@@ -15,3 +15,11 @@ void push_back(struct vector *v, int val) {
     v->cap *= 2;
     v->arr[v->cur++] = val;
 }
+
+int *at(struct vector *v, int pos) {
+    if (v->cur <= pos) {
+        return NULL;
+    }
+
+    return v->arr + pos;
+}
