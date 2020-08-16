@@ -10,9 +10,9 @@ void init(struct vector *v) {
 void push_back(struct vector *v, int val) {
     if (v->cur == v->cap) {
         v->arr = realloc(v->arr, sizeof(int) * v->cap * 2);
+        v->cap *= 2;
     }
 
-    v->cap *= 2;
     v->arr[v->cur++] = val;
 }
 
