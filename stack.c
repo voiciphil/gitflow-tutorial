@@ -19,3 +19,7 @@ void push(struct stack *s, int val) {
 void pop(struct stack *s) {
     s->cur--;
 }
+
+int top(struct stack *s) {
+    return s->arr[s->cur - 1];
+}
