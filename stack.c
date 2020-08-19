@@ -9,7 +9,7 @@ void init(struct stack *s) {
 
 void push(struct stack *s, int val) {
     if (s->cur == s->cap) {
-        s->arr = realloc(sizeof(int) * s->cap * 2);
+        s->arr = realloc(s->arr, sizeof(int) * s->cap * 2);
         s->cap *= 2;
     }
 
