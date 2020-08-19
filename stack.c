@@ -23,3 +23,7 @@ void pop(struct stack *s) {
 int top(struct stack *s) {
     return s->arr[s->cur - 1];
 }
+
+int empty(struct stack *s) {
+    return s->cur == 0;
+}
