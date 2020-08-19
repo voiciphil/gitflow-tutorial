@@ -9,13 +9,13 @@ git pull origin develop
 ```
 git checkout -b feature-sth
 ```
-3. 개발 완료 후, feature 브랜치를 rebase 한다.
+3. 개발 완료 후, feature 브랜치를 develop 브랜치에 rebase 한다.
 ```
 git checkout develop
 git pull origin develop
 git rebase develop feature-sth
 ```
-4. feature 브랜치를 원격 저장소로 push 한다. (rebase 후 feature 브랜치로 자동 checkout) 
+4. feature 브랜치를 원격 저장소로 push 한다. (rebase 후 feature 브랜치로 자동 checkout 됨) 
 ```
 git push origin feature-sth
 ```
@@ -27,6 +27,11 @@ git pull origin develop
 git branch -d feature-sth
 ```
 7. merge 되지 않으면 원격 저장소의 feature 브랜치를 삭제하고 3번부터 다시 시작한다.
+
+## 주의 사항
+* 로컬에서 merge 하지 않는다.
+* feature 브랜치는 개발이 완료되고 PR을 날릴 때 원격 저장소에 push 한다.
+* 7번에서 로컬 브랜치는 삭제하지 않는다.
 
 ## 참고 자료
 * [Git 협업 가이드](https://velog.io/@jinuku/Git-%ED%98%91%EC%97%85-%EA%B0%80%EC%9D%B4%EB%93%9C)
