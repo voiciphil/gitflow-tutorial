@@ -26,7 +26,7 @@ git checkout develop
 git pull origin develop
 git branch -d feature-sth
 ```
-7. merge 되지 않으면 3번부터 다시 시작한다.
+7. merge 되지 않으면 원격 저장소의 feature 브랜치를 삭제하고 3번부터 다시 시작한다.
 
 ## 참고 자료
 * [Git 협업 가이드](https://velog.io/@jinuku/Git-%ED%98%91%EC%97%85-%EA%B0%80%EC%9D%B4%EB%93%9C)
