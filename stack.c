@@ -15,3 +15,7 @@ void push(struct stack *s, int val) {
 
     s->arr[s->cur++] = val;
 }
+
+void pop(struct stack *s) {
+    s->cur--;
+}
