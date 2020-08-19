@@ -2,8 +2,6 @@
 #include "vector.h"
 
 int main(void) {
-    printf("hello, world!\n");
-
     struct vector v;
     init(&v);
     printf("%d\n", empty(&v));
