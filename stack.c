@@ -6,3 +6,12 @@ void init(struct stack *s) {
     s->cur = 0;
     s->cap = 1;
 }
+
+void push(struct stack *s, int val) {
+    if (s->cur == s->cap) {
+        s->arr = realloc(sizeof(int) * s->cap * 2);
+        s->cap *= 2;
+    }
+
+    s->arr[s->cur++] = val;
+}
