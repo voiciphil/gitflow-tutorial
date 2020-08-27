@@ -57,11 +57,18 @@
 ```bash
 (feature) $ git push origin feature
 ```
-> 9번에서 다시 돌아왔으면 push가 되지 않을 수 있다.
-> 이때 -f 옵션을 사용하여 강제 push 한다.
+> 9번에서 다시 돌아왔으면 push가 되지 않을 수 있다.  
+> 이때 다음 두 가지 방법 중 하나를 선택한다.
+> 1. -f 옵션을 사용하여 강제 push 한다.
 > ```
 > (feature) $ git push -f origin feature
 > ```
+> 2. 원격 feature 브랜치를 지우고 다시 push 한다.
+> ```
+> (feature) $ git push origin :feature
+> (feature) $ git push origin feature
+> ```
+
 6. github 에서 원격 develop 브랜치에 PR을 날린다.
 7. github 에서 squash and merge 방식을 사용하여 merge 한다.
 8. 원격 develop 브랜치에서 merge 된 결과를 pull 하고 원격 로컬 모두 feature 브랜치를 삭제한다. 
