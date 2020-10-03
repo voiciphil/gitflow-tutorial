@@ -36,7 +36,7 @@
 > ```
 
 6. github 에서 원격 develop 브랜치에 PR을 날린다.
-7. github 에서 squash and merge 방식을 사용하여 merge 한다.
+7. github 에서 원하는 방식을 사용해 merge 한다.
 8. 원격 develop 브랜치에서 merge 된 결과를 pull 하고 원격 로컬 모두 feature 브랜치를 삭제한다. 
 ```bash
 (develop) $ git pull origin develop
